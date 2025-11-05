@@ -1,0 +1,78 @@
+version: "3.1"
+
+intents:
+  - internship_season_start
+  - pre_placement_talks
+  - companies_visiting_stats
+  - current_batch_stats
+  - company_specific_intake
+  - cgpa_importance
+  - resume_guidelines
+  - resume_importance
+  - online_assessment_details
+  - interview_dress_code
+  - ds_algo_resources
+  - greet
+  - goodbye
+
+entities:
+  - company
+
+slots:
+  company:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: company
+
+responses:
+  utter_internship_season_start:
+    - text: "The first company for internship comes around your 2nd year end break..."
+
+  utter_pre_placement_talks:
+    - text: "Most companies do have PPTs before online assessments..."
+
+  utter_companies_visiting_stats:
+    - text: "Various companies visit campus every year including product, service, and core..."
+
+  utter_current_batch_stats:
+    - text: "For batch 26 ~300 students got internships, for batch 27 ~163 so far..."
+
+  utter_company_specific_intake:
+    - text: "Mass recruiting is limited. Most companies hire 5–15 interns..."
+
+  utter_cgpa_importance:
+    - text: "CGPA mainly matters in the first few weeks for shortlisting..."
+
+  utter_resume_guidelines:
+    - text: "Adjust your resume based on JD, keep it clean, use Overleaf templates..."
+
+  utter_resume_importance:
+    - text: "Some companies shortlist purely based on resume..."
+
+  utter_online_assessment_details:
+    - text: "OAs generally include 2–4 DSA problems, aptitude, OS/DBMS MCQs..."
+
+  utter_interview_dress_code:
+    - text: "Wear formals, avoid jeans/sneakers unless absolutely necessary..."
+
+  utter_ds_algo_resources:
+    - text: "Follow Striver/NeetCode roadmaps, avoid Python for OA unless allowed..."
+
+  utter_greet:
+    - text: "Hey! How can I help you regarding internships or placements?"
+  utter_welcome:
+    - text: "You're welcome! Happy to help 😊"
+
+  utter_goodbye:
+    - text: "All the best! You got this 🔥"
+  utter_default:
+    - text: "Sorry, I didn't understand that. Can you rephrase?"
+
+actions:
+  - action_fetch_intent_info
+  - action_fetch_company_details
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

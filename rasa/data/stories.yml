@@ -1,0 +1,22 @@
+version: "3.1"
+
+stories:
+# Keeping only basic conversational stories
+# All data-related intents (internships, CGPA, resume, etc.) are now handled by backend actions.
+
+- story: greet story
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye story
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: thank you story
+  steps:
+  - intent: thankyou
+  - action: utter_welcome
+
+# You can add any other small talk or basic FAQ stories below this if needed.

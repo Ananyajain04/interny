@@ -1,0 +1,187 @@
+version: "3.1"
+nlu:
+
+# ------------------------------
+# Internship Season Start
+# ------------------------------
+- intent: internship_season_start
+  examples: |
+    - When do internship companies start coming?
+    - What month does internship season begin?
+    - When is the first company visit?
+    - Around which semester do internships start?
+    - Do companies come before the 5th semester?
+    - When does Tier-1 recruitment begin?
+    - How early should we prepare for internship?
+    - Does internship season start in the 4th or 5th sem?
+    - How long does internship season last?
+    - When did last year’s internship start?
+
+# ------------------------------
+# Pre-placement talks (PPTs)
+# ------------------------------
+- intent: pre_placement_talks
+  examples: |
+    - How important are pre-placement talks?
+    - Are there pre-placement talks before companies arrive?
+    - Do we need to wear formals for pre-placement talks?
+    - What kind of information do they provide in the PPTs?
+    - Is it compulsory to attend PPTs?
+    - Will I get blacklisted if I don't attend PPTs?
+    - Do we get ODs for PPTs?
+
+# ------------------------------
+# Companies Visiting Stats
+# ------------------------------
+- intent: companies_visiting_stats
+  examples: |
+    - How many companies usually come for placements?
+    - Which companies visit our campus every year?
+    - What type of companies come here?
+    - Do product companies come?
+    - Do service companies come frequently?
+    - Do startups visit for placements?
+    - Are foreign companies coming this year?
+    - How many Tier-1 companies visit?
+    - What companies don't visit anymore?
+    - How often do new companies participate?
+    - Which companies gave the highest offers last year?
+    - Are there core domain companies available?
+
+# ------------------------------
+# Current Batch Stats
+# ------------------------------
+- intent: current_batch_stats
+  examples: |
+    - How many companies have come for the current 3rd year batch?
+    - What is the current internship status for this year?
+    - How many students got internships this year?
+    - Which companies have visited so far?
+    - Are companies this year hiring more students than last?
+    - How many offers have been made this year?
+    - How many Tier-1 offers were given this season?
+    - Are more companies expected to come?
+    - How many internship offers were given this year?
+    - Any notable high CTC companies this season?
+    - Did more companies visit this year compared to last?
+
+# ------------------------------
+# Company Specific Intake
+# ------------------------------
+- intent: company_specific_intake
+  examples: |
+    - How many did Microsoft hire?
+    - What was the intake of JPMC?
+    - Did Natwest take many students?
+    - How many students did Wells Fargo select?
+    - How many students got Microsoft offers last year?
+    - Which company gave the most PPOs?
+    - Are there mass recruiters this year?
+    - What is the intake of JPMC?
+
+# ------------------------------
+# CGPA Importance
+# ------------------------------
+- intent: cgpa_importance
+  examples: |
+    - How important is CGPA for placements?
+    - Do companies look at CGPA?
+    - Can I get an internship with a low CGPA?
+    - Is 7 CGPA enough for internships?
+    - Does CGPA affect shortlisting?
+    - Do backlogs matter for eligibility?
+    - What CGPA do service companies require?
+    - What about companies with 9 CGPA cutoffs?
+    - Does CGPA matter more than resume?
+
+# ------------------------------
+# Resume Guidelines
+# ------------------------------
+- intent: resume_guidelines
+  examples: |
+    - How should I create my resume?
+    - What format should my resume follow?
+    - What should I include in my resume?
+    - How many pages should my resume be?
+    - Can I add school achievements?
+    - Should I include certifications?
+    - Should I include GitHub links?
+    - Can I include self-projects?
+    - Can I put fake projects?
+    - Should I include CGPA on my resume?
+    - What sections must a resume have?
+    - Should my resume be one page or two?
+
+# ------------------------------
+# Resume Importance
+# ------------------------------
+- intent: resume_importance
+  examples: |
+    - How important is resume in placements?
+    - Does resume matter more than CGPA?
+    - Can a bad resume get me rejected?
+    - Is resume the first shortlisting filter?
+    - Are resumes manually reviewed?
+    - Do keywords matter in resume?
+    - Can resume gaps hurt my chances?
+    - Does design matter in a resume?
+    - What makes a resume stand out?
+    - Do companies shortlist based on resume?
+    - Can resume alone get me shortlisted?
+    - Will they reject me for missing projects?
+
+# ------------------------------
+# Online Assessment Details
+# ------------------------------
+- intent: online_assessment_details
+  examples: |
+    - What happens in online assessments?
+    - Are online assessments online or offline?
+    - What questions are asked in OA rounds?
+    - What topics come in MCQs?
+    - How hard are coding rounds?
+    - Do OA rounds have aptitude questions?
+    - How many coding questions are there?
+    - Is there negative marking?
+    - Do companies ask puzzles?
+    - Will there be DSA questions?
+    - How long does the OA test last?
+    - Are there behavioral questions too?
+    - How should I prepare for the OA?
+
+# ------------------------------
+# Interview Dress Code
+# ------------------------------
+- intent: interview_dress_code
+  examples: |
+    - What should I wear for interviews?
+    - Do I need to wear formals?
+    - Can I wear jeans?
+    - Is a tie mandatory?
+    - Should I wear a blazer?
+    - Can girls wear kurtis?
+    - Should I tuck my shirt in?
+    - Can I wear sports shoes?
+    - Are sneakers allowed?
+    - Should I shave or trim my beard?
+    - Is a haircut required?
+    - Is casual clothing okay for virtual interviews?
+
+# ------------------------------
+# DSA Resources
+# ------------------------------
+- intent: ds_algo_resources
+  examples: |
+    - Best resources for DSA?
+    - How to choose a language for DSA?
+    - How do I prepare for coding interviews?
+    - How to practice DSA?
+    - Which platforms should I use for coding?
+    - LeetCode or CodeStudio?
+    - What’s the roadmap for DSA?
+    - Should I follow Striver sheet?
+    - How many questions to solve?
+    - Best YouTube channels for DSA?
+    - How long does it take to finish DSA?
+    - Should I do competitive programming?
+    - Are paid courses required?
