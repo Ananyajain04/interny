@@ -70,14 +70,39 @@ nlu:
 # ------------------------------
 - intent: company_specific_intake
   examples: |
-    - How many did Microsoft hire?
-    - What was the intake of JPMC?
-    - Did Natwest take many students?
-    - How many students did Wells Fargo select?
-    - How many students got Microsoft offers last year?
-    - Which company gave the most PPOs?
-    - Are there mass recruiters this year?
-    - What is the intake of JPMC?
+    - How many did [Microsoft](company) hire?
+    - What was the intake of [JPMC](company)?
+    - Did [Natwest](company) take many students?
+    - How many students did [Wells Fargo](company) select?
+    - How many students got [Microsoft](company) offers last year?
+    - What is the intake of [JPMC](company)?
+    - Did [Goldman Sachs](company) hire many this year?
+    - How many interns did [Amazon](company) take?
+
+    - synonym: American Express
+  examples: |
+    - amex
+    - americanexpress
+    - american express
+    - amex internship
+    - amex company
+
+- synonym: Western Digital
+  examples: |
+    - wd
+    - western digital
+    - w.d.
+    - western_digital
+    - westerndigital
+
+- synonym: NatWest
+  examples: |
+    - nat west
+    - natwest group
+    - nw
+    - natwest internship
+
+
 
 # ------------------------------
 # CGPA Importance

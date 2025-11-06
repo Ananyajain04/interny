@@ -1,22 +1,77 @@
 version: "3.1"
 
 stories:
-# Keeping only basic conversational stories
-# All data-related intents (internships, CGPA, resume, etc.) are now handled by backend actions.
 
+# -------------------------------
+# Intent → Backend Intent Info
+# -------------------------------
+- story: internship season story
+  steps:
+    - intent: internship_season_start
+    - action: action_fetch_intent_info
+
+- story: pre placement talks story
+  steps:
+    - intent: pre_placement_talks
+    - action: action_fetch_intent_info
+
+- story: companies visiting stats story
+  steps:
+    - intent: companies_visiting_stats
+    - action: action_fetch_intent_info
+
+- story: current batch stats story
+  steps:
+    - intent: current_batch_stats
+    - action: action_fetch_intent_info
+
+- story: cgpa importance story
+  steps:
+    - intent: cgpa_importance
+    - action: action_fetch_intent_info
+
+- story: resume guidelines story
+  steps:
+    - intent: resume_guidelines
+    - action: action_fetch_intent_info
+
+- story: resume importance story
+  steps:
+    - intent: resume_importance
+    - action: action_fetch_intent_info
+
+- story: online assessment story
+  steps:
+    - intent: online_assessment_details
+    - action: action_fetch_intent_info
+
+- story: interview dress code story
+  steps:
+    - intent: interview_dress_code
+    - action: action_fetch_intent_info
+
+- story: dsa resources story
+  steps:
+    - intent: ds_algo_resources
+    - action: action_fetch_intent_info
+
+# -------------------------------
+# Company Specific Intake → Backend
+# -------------------------------
+- story: company specific intake story
+  steps:
+    - intent: company_specific_intake
+    - action: action_fetch_company_details
+
+# -------------------------------
+# Smalltalk
+# -------------------------------
 - story: greet story
   steps:
-  - intent: greet
-  - action: utter_greet
+    - intent: greet
+    - action: utter_greet
 
 - story: goodbye story
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
-- story: thank you story
-  steps:
-  - intent: thankyou
-  - action: utter_welcome
-
-# You can add any other small talk or basic FAQ stories below this if needed.
+    - intent: goodbye
+    - action: utter_goodbye
