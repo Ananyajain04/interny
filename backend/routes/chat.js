@@ -8,28 +8,51 @@ const router = express.Router();
 router.post("/", async (req, res) => {
   const { message } = req.body;
 
-  // Send to Rasa to detect intent and entity
-  const rasaResponse = await axios.post(process.env.RASA_URL, {
-    sender: "user",
-    message
-  });
+  try {
+    // Ask Rasa to parse message
+    const rasaResponse = await axios.post(
+      "http://localhost:5005/model/parse",
+      { text: message }
+    );
 
-  const rasaMsg = rasaResponse.data[0];
-  const detectedIntent = rasaMsg.intent.name;
-  const company = rasaMsg.entities?.find(e => e.entity === "company")?.value;
+    const intent = rasaResponse.data.intent?.name;
+    const entities = rasaResponse.data.entities || [];
 
-  // If query is company specific
-  if (detectedIntent === "company_specific_intake" && company) {
-    const data = await CompanyIntake.findOne({ company: { $regex: new RegExp(company, "i") }});
-    if (data) return res.json({ reply: `${company} selected ${data.internships} interns in ${data.month}. CGPA cutoff: ${data.cgpa_cutoff}. Notes: ${data.notes}`});
-    return res.json({ reply: `No data found for ${company}.`});
+    // Extract company name if present
+    const company = entities.find(e => e.entity === "company")?.value;
+
+    if (!intent) {
+      return res.json({ reply: "Sorry, I couldn't understand that." });
+    }
+
+    // Handle company-specific queries
+    if (intent === "company_specific_intake" && company) {
+      const data = await CompanyIntake.findOne({
+        company: { $regex: new RegExp(`^${company}$`, "i") }
+      });
+
+      if (!data) {
+        return res.json({ reply: `No data found for ${company}.` });
+      }
+
+      return res.json({
+        reply: `${data.company} selected ${data.internships} interns.\nMonth: ${data.month}\nCGPA Cutoff: ${data.cgpa_cutoff}\nNotes: ${data.notes}`
+      });
+    }
+
+    // Otherwise fetch intent reply from DB
+    const intentData = await Intent.findOne({ intent });
+
+    if (intentData) {
+      return res.json({ reply: intentData.short_answer });
+    }
+
+    return res.json({ reply: "Sorry, I don't have data on that yet!" });
+
+  } catch (err) {
+    console.error("Chat error:", err);
+    return res.json({ reply: "Server error. Try again later." });
   }
-
-  // Otherwise fetch regular intent
-  const result = await Intent.findOne({ intent: detectedIntent });
-  if (result) return res.json({ reply: result.short_answer });
-
-  return res.json({ reply: "Sorry, I don't have data on that yet!" });
 });
 
 export default router;
