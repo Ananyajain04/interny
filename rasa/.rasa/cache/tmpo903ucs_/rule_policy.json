@@ -1,0 +1,30 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cgpa_importance\"}}]": "action_fetch_intent_info",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cgpa_importance\"}}, {\"prev_action\": {\"action_name\": \"action_fetch_intent_info\"}, \"user\": {\"intent\": \"cgpa_importance\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"internship_season_start\"}}]": "action_fetch_intent_info",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"internship_season_start\"}}, {\"prev_action\": {\"action_name\": \"action_fetch_intent_info\"}, \"user\": {\"intent\": \"internship_season_start\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "utter_default",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_default\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"company_specific_intake\"}}]": "action_fetch_company_details",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"company_specific_intake\"}}, {\"prev_action\": {\"action_name\": \"action_fetch_company_details\"}, \"user\": {\"intent\": \"company_specific_intake\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cgpa_importance\"}}, {\"prev_action\": {\"action_name\": \"action_fetch_intent_info\"}, \"user\": {\"intent\": \"cgpa_importance\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"internship_season_start\"}}, {\"prev_action\": {\"action_name\": \"action_fetch_intent_info\"}, \"user\": {\"intent\": \"internship_season_start\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"internship_season_start\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cgpa_importance\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"company_specific_intake\"}}, {\"prev_action\": {\"action_name\": \"action_fetch_company_details\"}, \"user\": {\"intent\": \"company_specific_intake\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_default\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"company_specific_intake\"}}]"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "back": 0,
+        "cgpa_importance": 1,
+        "companies_visiting_stats": 2,
+        "company_specific_intake": 3,
+        "current_batch_stats": 4,
+        "ds_algo_resources": 5,
+        "goodbye": 6,
+        "greet": 7,
+        "internship_season_start": 8,
+        "interview_dress_code": 9,
+        "nlu_fallback": 10,
+        "online_assessment_details": 11,
+        "out_of_scope": 12,
+        "pre_placement_talks": 13,
+        "restart": 14,
+        "resume_guidelines": 15,
+        "resume_importance": 16,
+        "session_start": 17
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "utter_cgpa_importance": 13,
+        "utter_companies_visiting_stats": 14,
+        "utter_company_specific_intake": 15,
+        "utter_current_batch_stats": 16,
+        "utter_default": 17,
+        "utter_ds_algo_resources": 18,
+        "utter_goodbye": 19,
+        "utter_greet": 20,
+        "utter_internship_season_start": 21,
+        "utter_interview_dress_code": 22,
+        "utter_online_assessment_details": 23,
+        "utter_pre_placement_talks": 24,
+        "utter_resume_guidelines": 25,
+        "utter_resume_importance": 26
+      },
+      "entities": {
+        "company": 0
+      },
+      "slots": {
+        "company_0": 0
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": null
+}

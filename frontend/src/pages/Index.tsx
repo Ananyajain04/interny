@@ -20,6 +20,8 @@ const Index = () => {
     },
   ]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const [depth, setDepth] = useState<"short" | "long">("short");
+  const [lastIntent, setLastIntent] = useState<string | null>(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -41,33 +43,77 @@ const Index = () => {
 
     // Simulate bot response after a short delay
     // Send message to backend -> Rasa
-fetch("http://localhost:8000/chat", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({ message: text }),
-})
-  .then((res) => res.json())
-  .then((data) => {
-    const botMessage: Message = {
-      id: (Date.now() + 1).toString(),
-      text: data.reply || "No response from server.",
-      isBot: true,
-      timestamp: new Date(),
-    };
-    setMessages((prev) => [...prev, botMessage]);
-  })
-  .catch((err) => {
-    const errorMessage: Message = {
-      id: (Date.now() + 2).toString(),
-      text: "Server error: " + err.message,
-      isBot: true,
-      timestamp: new Date(),
-    };
-    setMessages((prev) => [...prev, errorMessage]);
-  });
+    setDepth("short");
+    fetch("http://localhost:8000/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ message: text, depth, sender: "web" }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        // Save intent coming from backend
+        if (data.intent) {
+          setLastIntent(data.intent);
+        }
 
+        // Reset depth back to short after a normal response
+        setDepth("short");
+
+        const botMessage: Message = {
+          id: (Date.now() + 1).toString(),
+          text: data.reply || "No response from server.",
+          isBot: true,
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, botMessage]);
+      })
+      .catch((err) => {
+        const errorMessage: Message = {
+          id: (Date.now() + 2).toString(),
+          text: "Server error: " + err.message,
+          isBot: true,
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, errorMessage]);
+      });
+  };
+  const handleShowMore = () => {
+    setDepth("long");
+
+    fetch("http://localhost:8000/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        message: "__DETAILS__", // special trigger understood by backend
+        depth: "long",
+        sender: "web",
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.intent) setLastIntent(data.intent);
+
+        const botMessage: Message = {
+          id: (Date.now() + 1).toString(),
+          text: data.reply || "No response from server.",
+          isBot: true,
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, botMessage]);
+      })
+      .catch((err) => {
+        const errorMessage: Message = {
+          id: (Date.now() + 2).toString(),
+          text: "Server error: " + err.message,
+          isBot: true,
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, errorMessage]);
+      });
   };
 
   return (
@@ -85,14 +131,26 @@ fetch("http://localhost:8000/chat", {
       {/* Messages Area */}
       <div className="flex-1 overflow-y-auto">
         <div className="max-w-4xl mx-auto px-4 py-6">
-          {messages.map((message) => (
-            <ChatMessage
-              key={message.id}
-              message={message.text}
-              isBot={message.isBot}
-              timestamp={message.timestamp}
-            />
+          {messages.map((message, index) => (
+            <div key={message.id}>
+              <ChatMessage
+                message={message.text}
+                isBot={message.isBot}
+                timestamp={message.timestamp}
+              />
+
+              {/* Show More button ONLY for last bot message */}
+              {message.isBot && index === messages.length - 1 && lastIntent && (
+                <button
+                  onClick={handleShowMore}
+                  className="text-xs text-blue-500 hover:underline mt-1 ml-12"
+                >
+                  Show more
+                </button>
+              )}
+            </div>
           ))}
+
           <div ref={messagesEndRef} />
         </div>
       </div>

@@ -79,7 +79,7 @@ nlu:
     - Did [Goldman Sachs](company) hire many this year?
     - How many interns did [Amazon](company) take?
 
-    - synonym: American Express
+- synonym: American Express
   examples: |
     - amex
     - americanexpress
@@ -210,3 +210,107 @@ nlu:
     - How long does it take to finish DSA?
     - Should I do competitive programming?
     - Are paid courses required?
+
+- intent: emotional_support
+  examples: |
+    - I'm sad
+    - feeling sad
+    - I am stressed
+    - I feel stressed about placements
+    - I'm anxious about internships
+    - I'm overwhelmed with prep
+    - I feel burned out
+    - I dont know what to do anymore
+  
+- intent: interview_performance_tips
+  examples: |
+    - how can I perform better in interviews?
+    - how can I do better in interviews?
+    - how can I answer questions
+    - interview preparation tips
+    - interview performance tips
+    - how to improve my interview confidence
+    - how do I answer questions better
+    - tips for technical interviews
+    - how to prepare for interviews
+
+- intent: how_to_get_OD
+  examples: |
+    - How do I get OD?
+    - How to get OD?
+    - Do we get OD for interviews?
+    - Will OD be provided for PPT?
+    - Is OD granted if I'm shortlisted?
+    - Who approves OD?
+    - Can I get OD for the test?
+    - Do we get OD for online assessments?
+    - Does CDC provide OD?
+    - Is OD allowed during internship drives?
+
+- intent: cdc_internship_details
+  examples: |
+    - Is the CDC internship worth credits?
+    - Do CDC internships give credit?
+    - Is this CDC internship useful?
+    - When does the CDC internship take place?
+    - What exactly is a CDC internship?
+    - Is CDC internship counted in academics?
+    - Are CDC internships beneficial?
+    - What happens in a CDC internship?
+    - How long is the CDC internship?
+    - Is CDC internship mandatory?
+
+- intent: project_suggestions
+  examples: |
+    - Give me some project suggestions
+    - What projects should I build?
+    - Best project ideas for internships
+    - What kind of projects help in interviews?
+    - What projects can I do?
+    - Suggest some projects for resume
+    - Good project ideas for freshers
+    - What projects are good for beginners?
+    - What projects should I add to resume?
+    - Project ideas for full stack internships
+
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - hello there
+    - hey there
+    - hi bot
+    - hey vitgpt
+    - good morning
+    - good evening
+    - what’s up
+    - yo
+
+- intent: user_introduction
+  examples: |
+    - I am Ananya
+    - I'm Ananya
+    - my name is Ananya
+    - hello I'm Ananya
+    - hey I'm [name]
+    - hi I am [name]
+    - I'm a student
+    - hi I am a student
+    - I'm a first year student
+    - I'm new here
+
+- intent: goodbye
+  examples: |
+    - okay thank you
+    - thank you
+    - thanks a lot
+    - that’s all
+    - bye
+    - okay bye
+    - thank you so much
+    - appreciate it
+    - bye bot
+    - see you later
+    - that’s it for now
+    - okay I'm done

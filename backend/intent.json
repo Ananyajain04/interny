@@ -2,71 +2,97 @@
   {
     "intent": "internship_season_start",
     "short_answer": "Internship companies generally start visiting around August, during the 5th semester. Tier-1 companies typically shortlist students with a 9+ CGPA early on, and the cycle continues throughout the semester.",
-    "long_answer": "The first internship companies usually visit around the end of 2nd year break, with most arriving in August during the 5th semester. Historically (2024 and 2025), almost all companies except JPMC have arrived after August. Tier-1 companies usually shortlist 9+ CGPA candidates early, but criteria relax later. Students should prepare in advance during 4th–5th sem. Updated: Feb 2025.",
+    "long_answer": "The first internship companies usually visit around the end of 2nd year break, with most arriving in August during the 5th semester. Historically (2024 and 2025), almost all companies except JPMC have arrived after August. Tier-1 companies usually shortlist 9+ CGPA candidates early, but criteria relax later. Students should prepare in advance during 4th–5th sem. Updated: Nov 2025.",
     "months_observed": ["July", "August", "September"],
-    "last_updated": "2025-02-06"
+    "last_updated": "2025-11-11"
   },
   {
     "intent": "pre_placement_talks",
     "short_answer": "Most companies conduct pre-placement talks before assessments. Formal attire is generally expected, and attendance is strongly recommended for shortlisted students.",
-    "long_answer": "Pre-placement talks (PPTs) provide information on CTC, hiring rounds, eligibility, role expectations, and selection flow. Dress code is usually formal unless stated otherwise. Attendance is strongly recommended if you're shortlisted. OD is provided depending on policy. Not attending typically doesn't lead to blacklisting, but avoid unnecessary absences. Updated: Feb 2025.",
-    "last_updated": "2025-02-06"
+    "long_answer": "Pre-placement talks (PPTs) provide information on CTC, hiring rounds, eligibility, role expectations, and selection flow. Dress code is usually formal unless stated otherwise. Attendance is strongly recommended if you're shortlisted. OD is provided depending on policy. Not attending typically doesn't lead to blacklisting, but avoid unnecessary absences. Updated: Nov 2025.",
+    "last_updated": "2025-11-11"
   },
   {
     "intent": "companies_visiting_stats",
     "short_answer": "A mix of product, service, core, and startup companies visit each season. Tier-1 product firms and consulting companies visit early, followed by service and core roles.",
-    "long_answer": "Campus drives attract Tier-1 product companies, consulting firms, financial technology companies, service-based MNCs, core electronics companies, and occasionally startups. Visit frequency varies based on business demand. Some companies return annually, while new participants appear each year. High-CTC offers are typically made in early cycles. Updated: Feb 2025.",
+    "long_answer": "Campus drives attract Tier-1 product companies, consulting firms, financial technology companies, service-based MNCs, core electronics companies, and occasionally startups. Visit frequency varies based on business demand. Some companies return annually, while new participants appear each year. High-CTC offers are typically made in early cycles. Updated: Nov 2025.",
     "company_types": ["Product", "Service", "Core", "FinTech", "Consulting"],
-    "last_updated": "2025-02-06"
+    "last_updated": "2025-11-11"
   },
   {
     "intent": "current_batch_stats",
     "short_answer": "Around 163 students from Batch-27 have received internship offers so far. More companies are expected later in the season.",
-    "long_answer": "Batch-26 recorded about 300 internship offers. Batch-27 currently stands at approximately 163 offers, with additional companies scheduled to visit. Trends vary by company demand. Companies that have visited so far include JPMC, Microsoft, KLA, Wells Fargo, Western Digital, Adobe, Visa, LinkedIn, Marvell, Accenture, Tecdia, GSK, Flipkart, Optum, Fidelity, NatWest, Optiv, MotorQ, Samsung, Aptiv, MUFG, AMEX, Tredence, BalkanID, and Intuit. Updated: Feb 2025.",
+    "long_answer": "Batch-26 recorded about 300 internship offers. Batch-27 currently stands at approximately 163 offers, with additional companies scheduled to visit. Trends vary by company demand. Companies that have visited so far include JPMC, Microsoft, KLA, Wells Fargo, Western Digital, Adobe, Visa, LinkedIn, Marvell, Accenture, Tecdia, GSK, Flipkart, Optum, Fidelity, NatWest, Optiv, MotorQ, Samsung, Aptiv, MUFG, AMEX, Tredence, BalkanID, and Intuit. Updated: Nov 2025.",
     "history": { "batch_26_offers": 300, "batch_27_offers": 163 },
-    "last_updated": "2025-02-06"
+    "last_updated": "2025-11-11"
   },
   {
     "intent": "company_specific_intake",
     "short_answer": "Only a few companies hire 20+ interns. Most companies select 5–15 students. Intake varies by skill demand and internal hiring capacity.",
-    "long_answer": "Internship mass-recruitment is limited. A small number of product or consulting companies select 20 or more students in a cycle. Most companies tend to hire within the 5–15 student range. Intake depends on business needs, interview performance quality, and skill match. Company-wise selection details are stored separately. Updated: Feb 2025.",
-    "last_updated": "2025-02-06"
+    "long_answer": "Internship mass-recruitment is limited. A small number of product or consulting companies select 20 or more students in a cycle. Most companies tend to hire within the 5–15 student range. Intake depends on business needs, interview performance quality, and skill match. Company-wise selection details are stored separately. Updated: Nov 2025.",
+    "last_updated": "2025-11-11"
   },
   {
     "intent": "cgpa_importance",
     "short_answer": "CGPA matters for initial shortlisting, especially in the first few weeks. Criteria relax later, and interviews then depend on technical knowledge.",
-    "long_answer": "Early cycles often require a 9+ CGPA for shortlist eligibility. Later, companies relax criteria and shortlist non-9 pointers. A CGPA of 7–7.5 is considered low-risk baseline, but opportunities still exist. Backlogs may affect eligibility. After shortlisting, your interview performance matters more than CGPA. Updated: Feb 2025.",
-    "last_updated": "2025-02-06"
+    "long_answer": "Early cycles often require a 9+ CGPA for shortlist eligibility. Later, companies relax criteria and shortlist non-9 pointers. A CGPA of 7–7.5 is considered low-risk baseline, but opportunities still exist. Backlogs may affect eligibility. After shortlisting, your interview performance matters more than CGPA. Updated: Nov 2025.",
+    "last_updated": "2025-11-11"
   },
   {
     "intent": "resume_guidelines",
     "short_answer": "Keep your resume clean, concise, and role-aligned. Highlight projects, skills, and relevant experience. Use a one-page format unless necessary.",
-    "long_answer": "Customise your resume to match the job description. Keep formatting minimal and ATS-friendly. Projects, skills, and experience sections should be placed near the top. Overleaf templates are student-friendly. Include CGPA, contact details, GitHub links, and certifications if relevant. School achievements can be added if space allows. Updated: Feb 2025.",
-    "last_updated": "2025-02-06"
+    "long_answer": "Customise your resume to match the job description. Keep formatting minimal and ATS-friendly. Projects, skills, and experience sections should be placed near the top. Overleaf templates are student-friendly. Include CGPA, contact details, GitHub links, and certifications if relevant. School achievements can be added if space allows. Updated: Nov 2025.",
+    "last_updated": "2025-11-11"
   },
   {
     "intent": "resume_importance",
     "short_answer": "A strong resume significantly improves your shortlisting chances for certain companies. Projects often matter more than CGPA after shortlisting.",
-    "long_answer": "Some companies perform resume-only shortlisting early in the cycle. Poor formatting and weak content may lead to rejection. Avoid fake projects—interviewers cross-question. ATS-friendly formatting improves parsing. Interviewers value relevant projects and skills. Updated: Feb 2025.",
-    "last_updated": "2025-02-06"
+    "long_answer": "Some companies perform resume-only shortlisting early in the cycle. Poor formatting and weak content may lead to rejection. Avoid fake projects—interviewers cross-question. ATS-friendly formatting improves parsing. Interviewers value relevant projects and skills. Updated: Nov 2025.",
+    "last_updated": "2025-11-11"
   },
   {
     "intent": "online_assessment_details",
     "short_answer": "OAs usually include 2–4 DSA coding questions, MCQs on CS fundamentals, aptitude, and puzzle-style problems. Duration ranges 60–90 minutes.",
-    "long_answer": "Online assessments vary by company. Most include easy–medium DSA coding questions, aptitude MCQs, logical puzzles, and questions from OS, DBMS, OOP, and basic system design. Some OAs are online; others are offline. Negative marking is uncommon. Updated: Feb 2025.",
-    "last_updated": "2025-02-06"
+    "long_answer": "Online assessments vary by company. Most include easy–medium DSA coding questions, aptitude MCQs, logical puzzles, and questions from OS, DBMS, OOP, and basic system design. Some OAs are online; others are offline. Negative marking is uncommon. Updated: Nov 2025.",
+    "last_updated": "2025-11-11"
   },
   {
     "intent": "interview_dress_code",
     "short_answer": "Wear formal attire for offline interviews to maintain a professional impression. Casual clothing is not advised.",
-    "long_answer": "Dress formally in shirt, trousers, and formal shoes. Blazers and ties are optional. Avoid jeans, sneakers, kurtis, or printed clothing for in-person interviews. Sports shoes are acceptable only if formal footwear is unavailable. Maintain grooming—trimmed beard and neat hair. Updated: Feb 2025.",
-    "last_updated": "2025-02-06"
+    "long_answer": "Dress formally in shirt, trousers, and formal shoes. Blazers and ties are optional. Avoid jeans, sneakers, kurtis, or printed clothing for in-person interviews. Sports shoes are acceptable only if formal footwear is unavailable. Maintain grooming—trimmed beard and neat hair. Updated: Nov 2025.",
+    "last_updated": "2025-11-11"
   },
   {
     "intent": "ds_algo_resources",
     "short_answer": "Use free online resources, solve consistently, and follow curated roadmaps like Striver or NeetCode. Prefer C++ or Java.",
-    "long_answer": "Choose C++ or Java since Python may not be allowed in all assessments. Avoid AI reliance for debugging. Solve DSA questions gradually and revise patterns. Follow curated sheets like NeetCode 150 or Striver SDE Sheet. Practice before optimization. Competitive programming is optional. Paid courses are optional. Updated: Feb 2025.",
+    "long_answer": "Choose C++ or Java since Python may not be allowed in all assessments. Avoid AI reliance for debugging. Solve DSA questions gradually and revise patterns. Follow curated sheets like NeetCode 150 or Striver SDE Sheet. Practice before optimization. Competitive programming is optional. Paid courses are optional. Updated: Nov 2025.",
     "recommended_sheets": ["NeetCode 150", "Striver SDE Sheet"],
-    "last_updated": "2025-02-06"
+    "last_updated": "2025-11-11"
+  },
+  {
+  "intent": "interview_performance_tips",
+  "short_answer": "To perform better in interviews, focus on clarity, structured answers, confidence, and hands-on understanding of your projects and fundamentals. Practice mock interviews regularly.",
+  "long_answer": "Improving interview performance is a combination of communication, preparation, and confidence. Focus on building a structured approach (STAR method for behavioral questions), practice explaining your projects clearly, and revise CS fundamentals. Do mock interviews with friends or online platforms to build fluency. Prepare concise answers for common questions like 'Tell me about yourself'. During technical rounds, explain your thought process. Always ask clarifying questions before solving problems. Don't panic if you make mistakes — interviewers value reasoning more than perfect solutions. Updated: Nov 2025.",
+  "last_updated": "2025-11-11"
+  },
+  {
+    "intent": "how_to_get_OD",
+    "short_answer": "OD (On Duty) will be given if you have been shortlisted for any PPT,OA etc. You can attend these without worrying about the classes attendance.",
+    "long_answer": "On Duty (OD) is typically provided when you are shortlisted for an official company assessment, interview, or scheduled pre-placement activity. If such activities come around any assessment you can inform your faculty about the same and retest will be conducted.",
+    "last_updated": "2025-11-11"
+  },
+
+  {
+    "intent": "cdc_internship_details",
+    "short_answer": "CDC internships are internships offered when companies come to your campus to hire interns.These internships arnet worth any credits and is purely for work experience purposes..",
+    "long_answer": "Companies come to campus to hire interns. This internship lasts 8-12 weeks usuaally mid-may to mid-june or mid-july. The internship doesnt and cant be claimed for any credits and is purely for work experience.",
+    "last_updated": "2025-02-13"
+  },
+
+  {
+    "intent": "project_suggestions",
+    "short_answer": "Build 2-3 strong, practical projects such as web apps, ML models, dashboards, or automation tools that showcase real skills.",
+    "long_answer": "For stronger internship applications, focus on building meaningful, practical projects that demonstrate your understanding of technology. Recommended categories include full-stack applications, authentication systems, real-time dashboards, machine learning classification/regression models, portfolio websites, or automation scripts. Ensure projects have proper documentation, clean code, and deployment links. Recruiters value clarity, originality, and problem-solving more than flashy UI or incomplete work. Quality over quantity is essential.",
+    "last_updated": "2025-11-11"
   }
 ]
