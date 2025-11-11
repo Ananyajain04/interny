@@ -17,7 +17,7 @@ ENV/
 # Rasa specific
 # ---------------------------
 # Models generated after training
-/models/
+#/models/
 
 # Temporary interactive learning data
 /results/
