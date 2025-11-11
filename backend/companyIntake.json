@@ -1,0 +1,79 @@
+[
+  {
+    "company": "JPMC",
+    "internships": 10,
+    "fulltime": 0,
+    "month": "August",
+    "drive_mode": "Registration + Online Assessment (as per SEP)",
+    "cgpa_cutoff": "8.5 or 85%",
+    "eligibility_branches": [
+      "Computer Science",
+      "Information Science",
+      "Information Technology",
+      "Data Science",
+      "Artificial Intelligence",
+      "Big Data",
+      "IoT"
+    ],
+    "arrears_allowed": false,
+    "academic_gap_allowed": false,
+    "batch": "2027",
+    "notes": "Software Engineer Program summer internship; formal application required.",
+    "last_updated": "2025-11-06"
+  },
+  {
+    "company": "American Express",
+    "internships": 4,
+    "fulltime": 0,
+    "month": "September",
+    "drive_mode": "Online Test + Virtual Interview",
+    "cgpa_cutoff": "7.0",
+    "eligibility_branches": [
+      "B.Tech CSE",
+      "IT"
+    ],
+    "arrears_allowed": false,
+    "academic_gap_allowed": false,
+    "shortlist_released": "1st September 2025",
+    "notes": "FinTech internship; dual round structure.",
+    "last_updated": "2025-11-06"
+  },
+  {
+    "company": "NatWest",
+    "internships": 10,
+    "fulltime": 0,
+    "month": "September",
+    "drive_mode": "PPT + Online Test + On-Campus Interview",
+    "cgpa_cutoff": "7.0 UG / 6.5 PG",
+    "eligibility_branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "EEE"
+    ],
+    "arrears_allowed": false,
+    "academic_gap_allowed": false,
+    "stipend": "₹55,000",
+    "shortlist_released": "1st September 2025",
+    "notes": "Super Dream category role.",
+    "last_updated": "2025-11-06"
+  },
+  {
+    "company": "Western Digital",
+    "internships": 2,
+    "fulltime": 0,
+    "month": "September",
+    "drive_mode": "Physical Drive",
+    "cgpa_cutoff": "7.5 or 75%",
+    "eligibility_branches": [
+      "B.Tech CSE",
+      "IT"
+    ],
+    "arrears_allowed": false,
+    "academic_gap_allowed": false,
+    "stipend": "₹40,000 + ₹2,200 meal card + insurance",
+    "shortlist_released": "1st September 2025",
+    "notes": "Physical campus drive; strict CGPA and no-gap policy.",
+    "last_updated": "2025-11-06"
+  }
+]
