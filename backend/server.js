@@ -17,8 +17,9 @@ mongoose.connect(process.env.MONGO_URI)
 import chatRoutes from "./routes/chat.js";
 import companyRoutes from "./routes/company.js";
 import intentRoutes from "./routes/intent.js";
+import authRoutes from "./routes/auth.js";
 
-
+app.use("/auth", authRoutes);
 app.use("/chat", chatRoutes);
 app.use("/company", companyRoutes);
 app.use("/intent", intentRoutes);

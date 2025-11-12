@@ -70,15 +70,47 @@ nlu:
 # ------------------------------
 - intent: company_specific_intake
   examples: |
-    - How many did [Microsoft](company) hire?
+    - How many students did [JPMC](company) select?
     - What was the intake of [JPMC](company)?
-    - Did [Natwest](company) take many students?
-    - How many students did [Wells Fargo](company) select?
-    - How many students got [Microsoft](company) offers last year?
-    - What is the intake of [JPMC](company)?
-    - Did [Goldman Sachs](company) hire many this year?
-    - How many interns did [Amazon](company) take?
+    - Did [JPMC](company) hire many students?
+    - How many students did [American Express](company) hire?
+    - Intake of [American Express](company)?
+    - Did [American Express](company) hire many students this year?
+    - What was the intake of [NatWest](company)?
+    - How many did [NatWest](company) select?
+    - Did [NatWest](company) take many students?
+    - How many students did [Western Digital](company) select?
+    - Intake of [Western Digital](company)
+    - How many interns did [Western Digital](company) hire?
+    - How many interns did [MotorQ](company) hire?
+    - Intake of [MotorQ](company)
+    - Did [MotorQ](company) take many students?
+    - How many students did [Microsoft](company) hire?
+    - What was the intake of [Microsoft](company)?
+    - How many interns did [Microsoft](company) take?
+    - Intake of [Tredence](company)
+    - How many did [Tredence](company) hire?
+    - Did [Tredence](company) take many students?
+    - How many students did [BalkanID](company) hire?
+    - Intake of [BalkanID](company)
+    - Did [BalkanID](company) hire many students?
+    - How many students did [KLA Technologies](company) take?
+    - Intake of [KLA Technologies](company)
+    - Did [KLA Technologies](company) take many students?
+    - What was the intake of [Flipkart](company)?
+    - How many interns did [Flipkart](company) hire?
+    - Did [Flipkart](company) hire many students?
+    - How many students did [Visa](company) select?
+    - Intake of [Visa](company)?
+    - Did [Visa](company) take many interns?
 
+- synonym: JPMC
+  examples: |
+    -jpmc
+    -jp morgan
+    -jpmorgan
+    -jp morgan chase
+  
 - synonym: American Express
   examples: |
     - amex
@@ -102,7 +134,19 @@ nlu:
     - nw
     - natwest internship
 
+- synonym: BalkanID
+  examples: |
+    -balkan id
+    -balkan-id
+    -balkanid
+    -balkan
 
+- synonym: KLA Technologies
+  examples: |
+    -kla
+    -kla tech
+    -kla company
+    -kla tech india
 
 # ------------------------------
 # CGPA Importance

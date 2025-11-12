@@ -2,10 +2,10 @@ import express from "express";
 import axios from "axios";
 import Intent from "../models/intent.js";
 import CompanyIntake from "../models/companyIntake.js";
-
+import authMiddleware from "../middleware/auth.js";
 const router = express.Router();
 
-router.post("/", async (req, res) => {
+router.post("/",authMiddleware, async (req, res) => {
   const { message, depth = "short", sender = "web" } = req.body;
 
   // Store last detected intent per user

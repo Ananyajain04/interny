@@ -30,6 +30,12 @@ const Index = () => {
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      window.location.href = "/login";
+    }
+  }, []);
 
   const handleSendMessage = (text: string) => {
     // Add user message
@@ -48,6 +54,7 @@ const Index = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("token"),
       },
       body: JSON.stringify({ message: text, depth, sender: "web" }),
     })
@@ -86,6 +93,7 @@ const Index = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("token"),
       },
       body: JSON.stringify({
         message: "__DETAILS__", // special trigger understood by backend
